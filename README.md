@@ -28,13 +28,13 @@ These are my personalized dotfiles for **Hyprland**/**Niri**/**Sway**/**bspwm**,
     - **[Calculator](https://github.com/GNOME/gnome-calculator)** - A Calculator.
     - **[Sober](https://sober.vinegarhq.org)** - Roblox for Linux.
     - **[Stremio](https://www.stremio.com/)** - Media center.
-    - **[Vinegar](https://vinegarhq.org/)** - Roblox Studio for Linux.
 - **[gamemode](https://github.com/FeralInteractive/gamemode)** - Games optimizer.
 - **[Gimp](https://www.gimp.org/)** - Image editor.
 - **[nwg-look](https://github.com/nwg-piotr/nwg-look)** - GTK3 Settings editor.
 - **[Papirus Folders](https://github.com/PapirusDevelopmentTeam/papirus-folders)** - Folder icon color changer.
 - **[Pavucontrol](https://freedesktop.org/software/pulseaudio/pavucontrol)** - GUI Audio configuration.
 - **[Thunar](https://docs.xfce.org/xfce/thunar/start)** - Lightweight file manager.
+- **[Vinegar](https://vinegarhq.org/)** - Roblox Studio for Linux.
 - **[VLC](https://www.videolan.org/vlc/)** - Media player.
 - **[Xournal++](https://github.com/xournalpp/xournalpp)** - Notetaking.
 - **[Zen Browser](https://github.com/zen-browser/desktop)** - Zen Browser is a Firefox-based 'Browser' (yhea, crazy).
@@ -118,7 +118,6 @@ nwg-look                    # GTK settings editor.
 org.gnome.Calculator        # Calculator (Flatpak).
 org.vinegarhq.Sober         # Roblox Client (Flatpak).
 com.stremio.Stremio         # Media center.
-org.vinegarhq.Vinegar       # Roblox Studio (Flatpak).
 papirus-folders             # Folder icon theme tool.
 pavucontrol                 # GUI audio configuration.
 polybar                     # Status bar.
@@ -134,6 +133,7 @@ sxhkd                       # Hotkey daemon.
 thunar                      # File manager.
 tumbler                     # Images preview for thunar.
 unrar                       # Unrar.
+vinegar-bin                 # Roblox Studio.
 vlc                         # Media player.
 vlc-plugins-all             # Plugins for VLC.
 waybar                      # Wayland status bar.

@@ -21,6 +21,7 @@ return {
 				"yaml",
 				"markdown",
 				"markdown_inline",
+				"mermaid",
 				"bash",
 				"tsx",
 				"css",

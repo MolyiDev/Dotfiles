@@ -1,5 +1,6 @@
 export BROWSER="$(which zen-browser)"
 export EDITOR="$(which nvim)"
+export VISUAL="$(which nvim)"
 export GTK_THEME=Adwaita:dark
 
 export XDG_CACHE_HOME="$HOME/.cache"

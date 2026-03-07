@@ -3242,7 +3242,7 @@ sout-x264-tune=film
 #alsa-audio-channels=6
 
 # Software gain (float)
-alsa-gain=0.421875
+alsa-gain=1.481544
 
 [xcb_screen] # Screen capture (with X11/XCB)
 

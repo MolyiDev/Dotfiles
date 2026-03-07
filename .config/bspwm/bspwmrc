@@ -40,7 +40,7 @@ bspc config urgent_border_color "#9b0000"
 
 # Focus
 bspc config focus_follows_pointer true
-bspc config pointer_follows_focus true
+bspc config pointer_follows_focus false
 bspc config pointer_follows_monitor true
 bspc config pointer_modifier mod4
 
@@ -55,6 +55,7 @@ xset r rate 300 75
 # Mouse acceleration
 xset m 0 0
 xinput set-prop "pointer:Compx 2.4G Wireless Receiver" "libinput Accel Profile Enabled" 0 1 0
+xinput set-prop "pointer:Compx 2.4G Dual Mode Mouse" "libinput Accel Profile Enabled" 0 1 0
 
 # Cursor
 xsetroot -cursor_name left_ptr

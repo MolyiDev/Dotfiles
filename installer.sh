@@ -32,11 +32,13 @@ AUR_COMMON=(
     papirus-folders
     awatcher-bundle
     zen-browser-bin
+    localsend-bin
+    qimgv-git
+    vinegar-git
 )
 
 FLATPAKS_COMMON=(
     org.gnome.Calculator
-    org.vinegarhq.Vinegar
     org.vinegarhq.Sober
     com.stremio.Stremio
 )

@@ -65,6 +65,7 @@ require("lazy").setup({
 	require("plugins.linter"),
 	require("plugins.noice"),
 	require("plugins.yazi"),
+	require("plugins.markdown-preview"),
 })
 
 -- [[ Requires ]]
