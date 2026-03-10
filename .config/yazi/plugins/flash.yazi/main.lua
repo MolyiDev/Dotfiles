@@ -401,7 +401,7 @@ local record_matches = ya.sync(function(state, patterns)
 	if cx.active.preview.folder then
 		ya.mgr_emit("peek", { force = true })
 	end
-	ya.render()
+	ui.render()
 
 	return exist_match
 end)
@@ -413,7 +413,7 @@ local toggle_flash_ui = ya.sync(function(st)
 		if cx.active.preview.folder then
 			ya.mgr_emit("peek", { force = true })
 		end
-		ya.render()
+		ui.render()
 		return
 	end
 
@@ -482,7 +482,7 @@ local process_input = ya.sync(function(state, patterns, final_input_str)
 
 	local exist_match = record_matches(patterns)
 
-	ya.render()
+	ui.render()
 	if not exist_match and (state.re_match or patterns[1] ~= "") and state.opt_auto_exit_when_unmatch then
 		return true, exist_match
 	else
@@ -495,7 +495,7 @@ local clear_flash_state = ya.sync(function(state)
 	state.next_char = nil
 	state.backouting = nil
 	state.match_pattern = nil
-	ya.render()
+	ui.render()
 end)
 
 local set_flash_opts_default = ya.sync(function(state)
@@ -537,7 +537,7 @@ local backout_last_input = ya.sync(function(state, input_str)
 	input_str = input_str:sub(1, -2)
 	state.backouting = true
 	state.match_pattern = input_str
-	ya.render()
+	ui.render()
 	return input_str, final_input_str
 end)
 
@@ -547,7 +547,7 @@ local flush_input_in_statusbar = ya.sync(function(state, input_str)
 	else
 		state.match_pattern = input_str
 	end
-	ya.render()
+	ui.render()
 end)
 
 local set_args_default = ya.sync(function(state, args)
