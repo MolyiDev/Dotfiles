@@ -24,15 +24,19 @@ These are my personalized dotfiles for **Hyprland**/**Niri**/**Sway**/**bspwm**,
 <summary><strong>Other</strong></summary>
 
 - **[Discord](https://discord.com/)** - It's discord.
+- **[EasyEffects](https://github.com/wwmm/easyeffects)** - Audio effects (mic).
 - **[Flatpak](https://flatpak.org/)** - Apps distributions for Linux.
     - **[Calculator](https://github.com/GNOME/gnome-calculator)** - A Calculator.
     - **[Sober](https://sober.vinegarhq.org)** - Roblox for Linux.
     - **[Stremio](https://www.stremio.com/)** - Media center.
 - **[gamemode](https://github.com/FeralInteractive/gamemode)** - Games optimizer.
 - **[Gimp](https://www.gimp.org/)** - Image editor.
+- **[LocalSend](https://localsend.org/)** - Share files to nearby devices.
 - **[nwg-look](https://github.com/nwg-piotr/nwg-look)** - GTK3 Settings editor.
+- **[OBS Studio](https://obsproject.com/)** - Screen recorder (with PipeWire audio capture plugin).
 - **[Papirus Folders](https://github.com/PapirusDevelopmentTeam/papirus-folders)** - Folder icon color changer.
 - **[Pavucontrol](https://freedesktop.org/software/pulseaudio/pavucontrol)** - GUI Audio configuration.
+- **[qimgv](https://github.com/easymodo/qimgv)** - Image viewer.
 - **[Thunar](https://docs.xfce.org/xfce/thunar/start)** - Lightweight file manager.
 - **[Vinegar](https://vinegarhq.org/)** - Roblox Studio for Linux.
 - **[VLC](https://www.videolan.org/vlc/)** - Media player.
@@ -75,6 +79,7 @@ These are my personalized dotfiles for **Hyprland**/**Niri**/**Sway**/**bspwm**,
 - **[alacritty](https://github.com/alacritty/alacritty)** - Terminal emulator.
 - **[feh](https://github.com/derf/feh)** - Image viewer (used for wallpapers).
 - **[i3lock-color](https://github.com/Raymo111/i3lock-color)** - Screen locker.
+- **[inputplug](https://github.com/andrewshadura/inputplug)** - Re-applies input settings on device hotplug.
 - **[maim](https://github.com/naelstrof/maim)** - Screenshot tool.
 - **[polybar](https://github.com/polybar/polybar)** - Status bar.
 - **[rofi](https://github.com/davatorium/rofi)** - App launcher.
@@ -96,6 +101,7 @@ awatcher-bundle             # Activity and idle watcher.
 baobab                      # Disk usage analyzer.
 cargo                       # Rust package manager.
 discord                     # It's Discord.
+easyeffects                 # Audio effects (mic).
 eza                         # Modern ls.
 fd                          # Finder.
 feh                         # Image viewer.
@@ -111,16 +117,24 @@ hyprpaper                   # Wallpaper manager.
 hyprpicker                  # Color picker.
 hyprshot                    # Screenshot tool.
 i3lock-color                # Screen locker.
+inputplug                   # Re-applies input settings on hotplug.
+localsend-bin               # Share files to nearby devices.
 maim                        # Screenshot tool.
 npm                         # Package manager.
 nvim                        # Terminal text editor. 
 nwg-look                    # GTK settings editor.
+obs-pipewire-audio-capture  # OBS audio capture (PipeWire).
+obs-studio                  # Screen recorder.
 org.gnome.Calculator        # Calculator (Flatpak).
 org.vinegarhq.Sober         # Roblox Client (Flatpak).
 com.stremio.Stremio         # Media center.
 papirus-folders             # Folder icon theme tool.
 pavucontrol                 # GUI audio configuration.
+pipewire                    # Audio server.
+pipewire-alsa               # ALSA support.
+pipewire-pulse              # PulseAudio compatibility.
 polybar                     # Status bar.
+qimgv-git                   # Image viewer.
 ripgrep                     # Text searcher.
 rofi                        # App launcher.
 snixembed                   # Tray Icons.
@@ -131,12 +145,14 @@ swaylock                    # Swaylock with effects.
 swww                        # Wayland wallpapers.
 sxhkd                       # Hotkey daemon.
 thunar                      # File manager.
+tmux                        # Terminal multiplexer.
 tumbler                     # Images preview for thunar.
 unrar                       # Unrar.
-vinegar-bin                 # Roblox Studio.
+vinegar                     # Roblox Studio.
 vlc                         # Media player.
 vlc-plugins-all             # Plugins for VLC.
 waybar                      # Wayland status bar.
+wireplumber                 # PipeWire session manager.
 wl-clipboard                # Wayland clipboard.
 xclip                       # X11 clipboard.
 xdg-user-dirs               # User directories + icons.

@@ -15,11 +15,22 @@ image/png=qimgv.desktop
 image/jpeg=aseprite.desktop;zen.desktop;
 x-scheme-handler/discord-1216669957799018608=discord-1216669957799018608.desktop
 x-scheme-handler/nxm=com.nexusmods.app.desktop
+x-scheme-handler/ror2mm=r2modman.desktop
+application/x-zerosize=vlc.desktop
+x-scheme-handler/td=timedoctor.desktop
+x-scheme-handler/timedoctor=timedoctor.desktop
+x-scheme-handler/claude-cli=claude-code-url-handler.desktop
 
 [Added Associations]
-audio/vnd.wave=vlc.desktop;
+audio/vnd.wave=vlc.desktop;mpv.desktop;
 x-scheme-handler/http=zen.desktop;
 x-scheme-handler/https=zen.desktop;
 x-scheme-handler/chrome=zen.desktop;
 video/quicktime=vlc.desktop;
-image/png=qimgv.desktop;imv-dir.desktop;imv.desktop;feh.desktop;
+image/png=gimp.desktop;imv.desktop;aseprite.desktop;qimgv.desktop;imv-dir.desktop;feh.desktop;
+image/jpeg=imv.desktop;
+application/x-zerosize=vlc.desktop;
+image/gif=vlc.desktop;
+video/x-matroska=mpv.desktop;losslesscut-bin.desktop;vlc.desktop;
+audio/x-vorbis+ogg=vlc.desktop;
+audio/mpeg=vlc.desktop;

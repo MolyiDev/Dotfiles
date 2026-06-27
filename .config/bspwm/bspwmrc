@@ -7,8 +7,11 @@ export BROWSER=zen-browser
 export FILE_MANAGER=thunar
 
 ### Output ###
-bspc monitor VGA-1 -d 1 2 3 4 5
-bspc monitor HDMI-1 -d 6 7 8 9 0
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --output HDMI-0 --primary
+xrandr --output HDMI-0 --primary --output DP-0 --auto --left-of HDMI-0
+bspc monitor DP-0 -d 1 2 3 4 5 6 7 8 9 10
+bspc monitor HDMI-0 -d 1 2 3 4 5 6 7 8 9 10
 
 ### Rules/EnvVars ###
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
@@ -49,25 +52,20 @@ xset s off dpms 0 0 0
 xset -dpms s off
 
 ### Other ###
-# Repeat delay 300ms and rate 75ms
-xset r rate 300 75
-
-# Mouse acceleration
-xset m 0 0
-xinput set-prop "pointer:Compx 2.4G Wireless Receiver" "libinput Accel Profile Enabled" 0 1 0
-xinput set-prop "pointer:Compx 2.4G Dual Mode Mouse" "libinput Accel Profile Enabled" 0 1 0
+# Input settings (re-applied on hotplug by inputplug)
+~/.config/bspwm/scripts/input.sh
 
 # Cursor
 xsetroot -cursor_name left_ptr
-
-# Layout
-setxkbmap -layout us -option caps:none
 
 # idk
 bspc config borderless_monocle true
 bspc config gapless_monocle true
 
 ### Startup ###
+# Inputplug for re-applying input settings on hotplug
+pgrep -x inputplug >/dev/null || inputplug -c ~/.config/bspwm/scripts/input.sh &
+
 # SXHKD for Keys
 pgrep -x sxhkd >/dev/null || sxhkd &
 
@@ -79,3 +77,6 @@ feh --bg-fill ~/.config/Wallpaper.jpg &
 
 # Idle
 ~/.config/bspwm/scripts/idle.sh &
+
+# EasyEffects for Mic
+easyeffects &

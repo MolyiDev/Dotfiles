@@ -22,8 +22,9 @@ PKGS_COMMON=(
     ttf-jetbrains-mono ttf-jetbrains-mono-nerd otf-codenewroman-nerd
     vim-spell-en vim-spell-es
     nwg-look
-    vlc vlc-plugins-all gimp xournalpp
+    vlc vlc-plugins-all gimp xournalpp obs-studio
     thunar tumbler baobab pavucontrol
+    pipewire pipewire-pulse pipewire-alsa wireplumber easyeffects
     discord steam gamemode
 )
 
@@ -34,7 +35,8 @@ AUR_COMMON=(
     zen-browser-bin
     localsend-bin
     qimgv-git
-    vinegar-git
+    obs-pipewire-audio-capture
+    vinegar
 )
 
 FLATPAKS_COMMON=(
@@ -56,7 +58,7 @@ case "$WINDOW_MANAGER" in
             xorg-server xorg-xev xorg-xinit xorg-xinput xorg-xset xorg-xsetroot
             xss-lock snixembed
         )
-        AUR_WM=( i3lock-color xidlehook )
+        AUR_WM=( i3lock-color xidlehook inputplug )
         ;;
 
     "sway")

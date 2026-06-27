@@ -1,2 +1,7 @@
 [studio]
 renderer = "Vulkan"
+
+[studio.env]
+__GL_SHADER_DISK_CACHE = "1"
+__GL_SHADER_DISK_CACHE_PATH = "/home/molyi/.cache/nvidia-gl"
+__GL_SHADER_DISK_CACHE_SIZE = "2147483648"

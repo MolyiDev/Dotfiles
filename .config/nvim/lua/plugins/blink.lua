@@ -1,5 +1,6 @@
 return { -- Autocompletion
 	"saghen/blink.cmp",
+	dependencies = { "saghen/blink.lib" },
 	event = "VimEnter",
 	config = function()
 		require("blink.cmp").setup({
@@ -65,7 +66,7 @@ return { -- Autocompletion
 					scrolloff = 2,
 					border = "single", -- e.g. "single", "double", "rounded", or nil to use vim.o.winborder
 					draw = {
-						padding = { 1, 0 },
+						padding = 1,
 						gap = 1,
 					},
 					winhighlight = "Normal:BlinkCmpMenu,FloatBorder:BlinkCmpMenuBorder,CursorLine:BlinkCmpMenuSelection,Search:None",

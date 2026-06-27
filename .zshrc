@@ -72,3 +72,7 @@ bindkey -v
 bindkey -M vicmd -r ":"
 export KEYTIMEOUT=1
 
+source "$HOME/.local/bin/env"
+
+# Codex installer
+export PATH="/home/molyi/.local/bin:$PATH"

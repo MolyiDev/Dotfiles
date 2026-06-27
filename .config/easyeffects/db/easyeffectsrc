@@ -1,0 +1,13 @@
+[StreamInputs]
+inputDevice=alsa_input.usb-352f_PD200X_Podcast_Microphone_214b206000000178-00.mono-fallback
+plugins=rnnoise#0,equalizer#0,deesser#0,compressor#0
+visiblePage=pluginsPage
+visiblePlugin=rnnoise#0
+
+[StreamOutputs]
+outputDevice=alsa_output.usb-352f_PD200X_Podcast_Microphone_214b206000000178-00.analog-stereo
+
+[Window]
+height=725
+visiblePage=inputPage
+width=1346

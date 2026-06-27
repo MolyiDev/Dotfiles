@@ -1,4 +1,13 @@
 .git
+.git-credentials
+.gnupg/
+.ssh/
+.pki/
+.netrc
+.pulse-cookie
+.local/share/keyrings/
+.mozilla/
+.zen/
 **/.config/Code - OSS/
 **/.config/discord/
 **/.config/google-chrome/
@@ -36,3 +45,21 @@
 **/.config/qimgv/
 **/.config/GameMakerStudio2-Beta/
 **/.config/mermaid-playground/
+**/.config/r2modman/
+**/.config/r2modmanPlus-local/
+**/.config/Proton/
+**/.config/Mullvad VPN/
+**/.config/LosslessCut/
+**/.config/unity3d/
+**/.config/.wrangler/
+**/.config/obs-studio/logs/
+**/.config/obs-studio/profiler_data/
+**/.config/obs-studio/updates/
+**/.config/obs-studio/.sentinel/
+**/.config/obs-studio/plugin_config/obs-websocket/
+**/.config/obs-studio/plugin_config/rtmp-services/
+**/.config/obs-studio/**/service.json
+**/.config/obs-studio/**/*.bak
+**/.config/uv/
+**/.config/fish/
+**/.config/.claude/settings.local.json

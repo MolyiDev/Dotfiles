@@ -1,0 +1,16 @@
+[sie][Equalizer#0]
+bypass=true
+
+[sie][Equalizer#0#left]
+band12Gain=-3
+band13Gain=-3
+band7Gain=3
+band8Gain=3
+band9Gain=3
+
+[sie][Equalizer#0#right]
+band12Gain=-3
+band13Gain=-3
+band7Gain=3
+band8Gain=3
+band9Gain=3
