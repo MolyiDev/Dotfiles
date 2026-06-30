@@ -66,3 +66,38 @@ if [ -d "$USER_SRC" ]; then
 else
     say "WARNING: Service directory $USER_SRC not found. Skipping services."
 fi
+
+# UPS (NUT) Setup
+if command -v upsc >/dev/null 2>&1; then
+    say "Configuring NUT for the UPS..."
+
+    # Driver config for the Lyonn CTB-1500AP (Megatec/Q1 over USB).
+    sudo tee /etc/nut/ups.conf >/dev/null <<'EOF'
+[ups]
+    driver = nutdrv_qx
+    port = auto
+    vendorid = 0665
+    productid = 5161
+    desc = "Lyonn CTB-1500AP"
+EOF
+
+    # Local standalone mode.
+    echo "MODE=standalone" | sudo tee /etc/nut/nut.conf >/dev/null
+
+    # upsmon login and safe shutdown on low battery (added once).
+    if ! sudo grep -q '^\[upsmon\]' /etc/nut/upsd.users 2>/dev/null; then
+        say "Adding upsmon login and shutdown rule..."
+        NUTPASS=$(head -c 24 /dev/urandom | base64 | tr -d '+/=\n' | cut -c1-24)
+        printf '\n[upsmon]\n    password = %s\n    upsmon primary\n' "$NUTPASS" \
+            | sudo tee -a /etc/nut/upsd.users >/dev/null
+        sudo sed -i '/^MONITOR ups@localhost/d' /etc/nut/upsmon.conf
+        printf '\nMONITOR ups@localhost 1 upsmon %s primary\nMINSUPPLIES 1\nSHUTDOWNCMD "/usr/bin/systemctl poweroff"\n' "$NUTPASS" \
+            | sudo tee -a /etc/nut/upsmon.conf >/dev/null
+    fi
+
+    # Enable services (start on next boot).
+    say "Enabling NUT services..."
+    sudo systemctl enable nut-driver-enumerator.path nut-server.service nut-monitor.service
+else
+    say "NUT not installed, skipping UPS setup."
+fi

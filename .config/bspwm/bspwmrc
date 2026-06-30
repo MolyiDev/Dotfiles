@@ -8,8 +8,9 @@ export FILE_MANAGER=thunar
 
 ### Output ###
 xrandr --setprovideroutputsource modesetting NVIDIA-0
-xrandr --output HDMI-0 --primary
-xrandr --output HDMI-0 --primary --output DP-0 --auto --left-of HDMI-0
+xrandr --output HDMI-0 --primary --output DP-0 --mode 1366x768 --left-of HDMI-0
+# Xft.dpi for i3lock scaling
+[ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
 bspc monitor DP-0 -d 1 2 3 4 5 6 7 8 9 10
 bspc monitor HDMI-0 -d 1 2 3 4 5 6 7 8 9 10
 
@@ -80,3 +81,9 @@ feh --bg-fill ~/.config/Wallpaper.jpg &
 
 # EasyEffects for Mic
 easyeffects &
+
+# Dunst for Notifications
+pgrep -x dunst >/dev/null || dunst &
+
+# UPS power notifier (outage / return)
+~/.config/bspwm/scripts/ups-notify.sh &

@@ -33,4 +33,4 @@ application/x-zerosize=vlc.desktop;
 image/gif=vlc.desktop;
 video/x-matroska=mpv.desktop;losslesscut-bin.desktop;vlc.desktop;
 audio/x-vorbis+ogg=vlc.desktop;
-audio/mpeg=vlc.desktop;
+audio/mpeg=audacity.desktop;vlc.desktop;

@@ -16,7 +16,7 @@ WINDOW_MANAGER="${WINDOW_MANAGER,,}"
 
 ### Packages ###
 PKGS_COMMON=(
-    base-devel git curl wget rsync tar xz fbset flatpak
+    base-devel git curl wget rsync tar xz fbset flatpak nut
     7zip eza fd fzf ripgrep yq tmux nvim yazi npm unrar unzip gvfs jq xdg-user-dirs
     zsh zsh-syntax-highlighting
     ttf-jetbrains-mono ttf-jetbrains-mono-nerd otf-codenewroman-nerd
@@ -55,8 +55,8 @@ case "$WINDOW_MANAGER" in
             bspwm
             sxhkd alacritty rofi polybar feh maim
             xdg-desktop-portal-gtk xclip xdotool
-            xorg-server xorg-xev xorg-xinit xorg-xinput xorg-xset xorg-xsetroot
-            xss-lock snixembed
+            xorg-server xorg-xev xorg-xinit xorg-xinput xorg-xrandr xorg-xrdb xorg-xset xorg-xsetroot
+            xss-lock snixembed dunst
         )
         AUR_WM=( i3lock-color xidlehook inputplug )
         ;;

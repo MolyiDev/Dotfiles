@@ -1,8 +1,13 @@
+[Presets]
+lastLoadedInputPreset=Test
+
 [StreamInputs]
 inputDevice=alsa_input.usb-352f_PD200X_Podcast_Microphone_214b206000000178-00.mono-fallback
-plugins=rnnoise#0,equalizer#0,deesser#0,compressor#0
+mostUsedPresets=Test,Normal
+plugins=rnnoise#0,equalizer#0,compressor#0,gate#0,limiter#0
+usedPresets=Test:6,Normal:4
 visiblePage=pluginsPage
-visiblePlugin=rnnoise#0
+visiblePlugin=limiter#0
 
 [StreamOutputs]
 outputDevice=alsa_output.usb-352f_PD200X_Podcast_Microphone_214b206000000178-00.analog-stereo
@@ -10,4 +15,4 @@ outputDevice=alsa_output.usb-352f_PD200X_Podcast_Microphone_214b206000000178-00.
 [Window]
 height=725
 visiblePage=inputPage
-width=1346
+width=1352

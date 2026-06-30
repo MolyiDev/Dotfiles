@@ -14,7 +14,7 @@
         "return-type": "json",
         "interval": 1200,
         "exec": "~/.config/waybar/scripts/github.sh",
-        "on-click": "xdg-open https://github.com/MolyiEZ",
+        "on-click": "xdg-open https://github.com/MolyiDev",
         "on-click-right": "pkill -SIGRTMIN+8 waybar",
         "tooltip": true,
         "signal": 8

@@ -32,6 +32,7 @@ These are my personalized dotfiles for **Hyprland**/**Niri**/**Sway**/**bspwm**,
 - **[gamemode](https://github.com/FeralInteractive/gamemode)** - Games optimizer.
 - **[Gimp](https://www.gimp.org/)** - Image editor.
 - **[LocalSend](https://localsend.org/)** - Share files to nearby devices.
+- **[Network UPS Tools](https://networkupstools.org/)** - UPS monitoring and safe shutdown.
 - **[nwg-look](https://github.com/nwg-piotr/nwg-look)** - GTK3 Settings editor.
 - **[OBS Studio](https://obsproject.com/)** - Screen recorder (with PipeWire audio capture plugin).
 - **[Papirus Folders](https://github.com/PapirusDevelopmentTeam/papirus-folders)** - Folder icon color changer.
@@ -77,6 +78,7 @@ These are my personalized dotfiles for **Hyprland**/**Niri**/**Sway**/**bspwm**,
 <summary><strong>bspwm only</strong></summary>
 
 - **[alacritty](https://github.com/alacritty/alacritty)** - Terminal emulator.
+- **[dunst](https://github.com/dunst-project/dunst)** - Notification daemon.
 - **[feh](https://github.com/derf/feh)** - Image viewer (used for wallpapers).
 - **[i3lock-color](https://github.com/Raymo111/i3lock-color)** - Screen locker.
 - **[inputplug](https://github.com/andrewshadura/inputplug)** - Re-applies input settings on device hotplug.
@@ -101,6 +103,7 @@ awatcher-bundle             # Activity and idle watcher.
 baobab                      # Disk usage analyzer.
 cargo                       # Rust package manager.
 discord                     # It's Discord.
+dunst                       # Notification daemon.
 easyeffects                 # Audio effects (mic).
 eza                         # Modern ls.
 fd                          # Finder.
@@ -121,6 +124,7 @@ inputplug                   # Re-applies input settings on hotplug.
 localsend-bin               # Share files to nearby devices.
 maim                        # Screenshot tool.
 npm                         # Package manager.
+nut                         # UPS monitoring and shutdown.
 nvim                        # Terminal text editor. 
 nwg-look                    # GTK settings editor.
 obs-pipewire-audio-capture  # OBS audio capture (PipeWire).
@@ -157,6 +161,8 @@ wl-clipboard                # Wayland clipboard.
 xclip                       # X11 clipboard.
 xdg-user-dirs               # User directories + icons.
 xidlehook                   # Idle manager.
+xorg-xrandr                 # Monitor configuration.
+xorg-xrdb                   # X resources (Xft.dpi).
 xournalpp                   # Note-taking.
 xwayland-satellite          # Xwayland outside wayland.
 yay                         # AUR helper.
